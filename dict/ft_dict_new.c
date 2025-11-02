@@ -6,13 +6,13 @@
 /*   By: ehode <ehode@student.42angouleme.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 05:58:18 by ehode             #+#    #+#             */
-/*   Updated: 2025/11/02 06:32:51 by ehode            ###   ########.fr       */
+/*   Updated: 2025/11/02 07:59:12 by ehode            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_dict		*ft_dict_new()
+t_dict	*ft_dict_new(void)
 {
 	t_dict	*dict;
 

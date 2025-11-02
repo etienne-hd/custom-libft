@@ -6,7 +6,7 @@
 /*   By: ehode <ehode@student.42angouleme.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 06:19:01 by ehode             #+#    #+#             */
-/*   Updated: 2025/11/02 06:43:21 by ehode            ###   ########.fr       */
+/*   Updated: 2025/11/02 07:58:57 by ehode            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ static void	ft_free_node(t_dict_node *node)
 	free(node);
 }
 
-void		ft_dict_clear(t_dict **dict)
+void	ft_dict_clear(t_dict **dict)
 {
 	t_dict_node	*node;
 	t_dict_node	*temp_node;
-	
+
 	node = (*dict)->entry;
 	while (node)
 	{
