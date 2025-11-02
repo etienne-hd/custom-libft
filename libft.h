@@ -6,7 +6,7 @@
 /*   By: ehode <ehode@student.42angouleme.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 13:46:06 by ehode             #+#    #+#             */
-/*   Updated: 2025/11/01 18:14:26 by ehode            ###   ########.fr       */
+/*   Updated: 2025/11/02 06:34:32 by ehode            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,3 +81,24 @@ void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
 #endif
+
+// dict
+typedef struct			s_dict_node
+{
+	char				*key;
+	void				*value;
+	struct s_dict_node	*next;
+}						t_dict_node;
+
+typedef struct			s_dict
+{
+	size_t				size;
+	t_dict_node			*entry;
+}						t_dict;
+
+t_dict		*ft_dict_new();
+t_dict_node	*ft_dict_set(t_dict *dict, char *key, void *value);
+void		ft_dict_unset(t_dict *dict, char *key);
+void		*ft_dict_get(t_dict *dict, char *key);
+t_dict_node	*ft_dict_get_node(t_dict *dict, char *key);
+void		ft_dict_clear(t_dict **dict);

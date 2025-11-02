@@ -55,6 +55,13 @@ SRCS_LIST = list/ft_lstadd_back.c \
 		list/ft_lstnew.c \
 		list/ft_lstsize.c
 
+SRCS_DICT = dict/ft_dict_new.c \
+		dict/ft_dict_set.c \
+		dict/ft_dict_unset.c \
+		dict/ft_dict_get.c \
+		dict/ft_dict_get_node.c \
+		dict/ft_dict_clear.c
+
 SRCS_PRINTF = ft_printf/srcs/ft_printf.c \
 		ft_printf/srcs/ft_putaddr.c \
 		ft_printf/srcs/ft_putchar.c \
@@ -74,6 +81,7 @@ SRCS = $(SRCS_CHARACTER) \
 	$(SRCS_MEMORY) \
 	$(SRCS_PUT) \
 	$(SRCS_LIST) \
+	$(SRCS_DICT) \
 	$(SRCS_PRINTF) \
 	$(SRCS_GET_NEXT_LINE)
 
@@ -95,4 +103,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re
