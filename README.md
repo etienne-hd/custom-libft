@@ -1,5 +1,5 @@
 # Custom Libft
-**This custom libft adds functions to the traditional libft that will be useful in my course at 42.**
+**This custom libft adds functions to the traditional [libft](https://github.com/etienne-hd/libft) that will be useful in my course at 42.**
 
 ```h
 // character
