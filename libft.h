@@ -6,7 +6,7 @@
 /*   By: ehode <ehode@student.42angouleme.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 13:46:06 by ehode             #+#    #+#             */
-/*   Updated: 2025/11/02 09:31:27 by ehode            ###   ########.fr       */
+/*   Updated: 2025/11/20 16:26:53 by ehode            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ char				*ft_strnstr(const char *big, const char *little,
 						size_t len);
 int					ft_atoi(const char *nptr);
 char				*ft_strdup(const char *s);
+char				*ft_strndup(char *str, size_t n);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s1, char const *set);
@@ -48,6 +49,8 @@ char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 int					ft_startwith(char *str, char *start);
 int					ft_endwith(char *str, char *end);
+char				*ft_replace(const char *s, const char *target,
+						const char *new);
 
 // memory
 void				*ft_memset(void *s, int c, size_t n);
