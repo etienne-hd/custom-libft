@@ -6,7 +6,7 @@
 /*   By: ehode <ehode@student.42angouleme.fr>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/13 13:46:06 by ehode             #+#    #+#             */
-/*   Updated: 2025/11/30 17:54:41 by ehode            ###   ########.fr       */
+/*   Updated: 2026/01/07 13:29:37 by ehode            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ char				*ft_strrchr(const char *s, int c);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strnstr(const char *big, const char *little,
 						size_t len);
-int					ft_atoi(const char *nptr);
+int					ft_atoi(const char *nptr, int *has_overflow);
 char				*ft_strdup(const char *s);
 char				*ft_strndup(char *str, size_t n);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
